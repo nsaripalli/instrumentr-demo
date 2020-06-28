@@ -1,8 +1,9 @@
 library(instrumentr)
 library(pryr)
 library(dplyr)
+library(stringr)
 
-call_arguments_data <- tibble(call_exit_id = numeric(0), fun_name = str(0), is_user_call = numeric(0), param_index = numeric(0), caller = str(0), line_number = str(0), type_of_argument = str(0), class_of_argument = str(0), address_of_argument = character(0))
+call_arguments_data <- tibble(call_exit_id = numeric(0), fun_name = str(0), package_details=str(0), is_call_user = numeric(0), call_stack_depth = numeric(0), is_user_call_with_pipe_operator = numeric(0), param_index = numeric(0), caller = str(0), line_number = str(0), type_of_argument = str(0), class_of_argument = str(0), address_of_argument = character(0))
 call_exit_data <- tibble(call_exit_id = numeric(0), fun_name = str(0), type_of_output = str(0), class_of_output = str(0), address_of_output = character(0))
 
 functions <- get_package_function_names("dplyr", public = TRUE, private = FALSE)
@@ -73,8 +74,6 @@ package_unload_callback <- function(context, application, package) { }
 function_attach_callback <- function(context, application, package, func) { }
 function_detach_callback <- function(context, application, package, func) { }
 
-#last_funcion_call <- NULL
-#last_call_stack <- NULL
 
 call_entry_callback <- function(context, application, package, func, call) { }
 
@@ -121,6 +120,12 @@ call_exit_callback <- function(context, application, package, func, call) {
   str <- caller_info("Called from %f at %s#%l\n", level = 2)
   caller <- paste(deparse(sys.call(which = -2)), collapse = '\n')
 
+  # Look at the model call stack to determine where the function was called from
+  call_stack <- capture.output(get_call_stack(application))
+  call_stack_depth <- as.numeric(str_sub(c(call_stack[1]), 11, -9))
+  is_call_user <- call_stack_depth == 1
+  package_details <- capture.output(package)
+
   for (parameter in parameters) {
 
     arguments <- get_arguments(parameter)
@@ -133,10 +138,13 @@ call_exit_callback <- function(context, application, package, func, call) {
         fun_name = fun_name,
         param_index = index,
         line_number = str,
-        is_user_call = startsWith(caller, "function_list[[") & endsWith(caller, "]](value)"),
+        is_user_call_with_pipe_operator = startsWith(caller, "function_list[[") & endsWith(caller, "]](value)"),
         caller = caller,
         type_of_argument = "vararg",
         class_of_argument = "vararg",
+        call_stack_depth = call_stack_depth,
+        is_call_user = is_call_user,
+        package_details = package_details
       )
     }
     else if (length(arguments) == 0) {
@@ -147,10 +155,13 @@ call_exit_callback <- function(context, application, package, func, call) {
         fun_name = fun_name,
         param_index = index,
         line_number = str,
-        is_user_call = startsWith(caller, "function_list[[") & endsWith(caller, "]](value)"),
+        is_user_call_with_pipe_operator = startsWith(caller, "function_list[[") & endsWith(caller, "]](value)"),
         caller = caller,
         type_of_argument = "No arguments",
         class_of_argument = "No arguments",
+        call_stack_depth = call_stack_depth,
+        is_call_user = is_call_user,
+        package_details = package_details
       )
     }
     else if (!is_evaluated(arguments[[1]])) {
@@ -161,27 +172,36 @@ call_exit_callback <- function(context, application, package, func, call) {
         fun_name = fun_name,
         param_index = index,
         line_number = str,
-        is_user_call = startsWith(caller, "function_list[[") & endsWith(caller, "]](value)"),
+        is_user_call_with_pipe_operator = startsWith(caller, "function_list[[") & endsWith(caller, "]](value)"),
         caller = caller,
-        type_of_argument = typeof(arguments[[1]]),
-        class_of_argument = paste(class(arguments[[1]]), collapse = '; '),
+        type_of_argument = typeof(get_expression(arguments[[1]])),
+        class_of_argument = paste(class(get_expression(arguments[[1]])), collapse = '; '),
+        address_of_argument = paste("Not evaluated, expression is: ", capture.output(get_expression(arguments[[1]]))),
+        call_stack_depth = call_stack_depth,
+        is_call_user = is_call_user,
+        package_details = package_details
       )
     }
     else {
       argument_value <- get_result(arguments[[1]])
       type_sig <- merge_type(type_sig, index, infer_type(argument_value))
 
+      arg_class <- paste(class(argument_value), collapse = '; ')
 
       call_arguments_data <<- call_arguments_data %>% add_row(
         call_exit_id = call_exit_id,
         fun_name = fun_name,
         param_index = index,
         line_number = str,
-        is_user_call = startsWith(caller, "function_list[[") & endsWith(caller, "]](value)"),
+        is_user_call_with_pipe_operator = startsWith(caller, "function_list[[") & endsWith(caller, "]](value)"),
         caller = caller,
         type_of_argument = typeof(argument_value),
-        class_of_argument = paste(class(argument_value), collapse = '; '),
-        address_of_argument = address(argument_value))
+        class_of_argument = arg_class,
+        address_of_argument = address(argument_value),
+        call_stack_depth = call_stack_depth,
+        is_call_user = is_call_user,
+        package_details = package_details
+      )
     }
 
     index <- index + 1
