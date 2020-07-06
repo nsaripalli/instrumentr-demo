@@ -1,33 +1,323 @@
-"","call_exit_id","fun_name","is_call_user","call_stack_depth","is_user_call_with_pipe_operator","caller","line_number","param_index","is_param_missing","name_of_param","type_of_argument","class_of_argument","address_of_argument","package_details"
-"1",1,"group_data",0,3,0,"group_rows(data)","Called from  at <text>#257
-",1,0,".data","list","tbl_df; tbl; data.frame","0x4a17fd8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"2",2,"group_rows",0,2,0,".subset2(public_bind_env, ""initialize"")(...)","Called from  at <text>#257
-",1,0,".data","list","tbl_df; tbl; data.frame","0x4a17fd8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"3",3,"group_data",0,3,0,"group_keys.data.frame(data)","Called from  at <text>#257
-",1,0,".data","list","tbl_df; tbl; data.frame","0x4a17fd8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"4",4,"group_keys",0,2,0,".subset2(public_bind_env, ""initialize"")(...)","Called from  at <text>#257
-",1,0,".tbl","list","tbl_df; tbl; data.frame","0x4a17fd8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"5",4,"group_keys",0,2,0,".subset2(public_bind_env, ""initialize"")(...)","Called from  at <text>#257
-",2,1,"...","vararg","vararg",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"6",5,"group_data",0,3,0,"setdiff(names(group_data(x)), "".rows"")","Called from  at <text>#257
-",1,0,".data","list","tbl_df; tbl; data.frame","0x4a17fd8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"7",6,"group_vars",0,2,0,".subset2(public_bind_env, ""initialize"")(...)","Called from  at <text>#257
-",1,0,"x","list","tbl_df; tbl; data.frame","0x4a17fd8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"8",7,"is_grouped_df",0,2,0,".subset2(public_bind_env, ""initialize"")(...)","Called from  at <text>#257
-",1,0,"x","list","tbl_df; tbl; data.frame","0x4a17fd8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"9",8,"dplyr_reconstruct",0,3,0,"dplyr_row_slice.data.frame(.data, loc, preserve = .preserve)","Called from  at <text>#257
-",1,0,"data","list","tbl_df; tbl; data.frame","0x86f0bf8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"10",8,"dplyr_reconstruct",0,3,0,"dplyr_row_slice.data.frame(.data, loc, preserve = .preserve)","Called from  at <text>#257
-",2,0,"template","list","tbl_df; tbl; data.frame","0x4a17fd8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"11",9,"dplyr_row_slice",0,2,0,"filter.data.frame(starwars, species == ""Droid"", .preserve = True)","Called from  at <text>#257
-",1,0,"data","list","tbl_df; tbl; data.frame","0x4a17fd8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"12",9,"dplyr_row_slice",0,2,0,"filter.data.frame(starwars, species == ""Droid"", .preserve = True)","Called from  at <text>#257
-",2,0,"i","logical","logical","0x7d50b60","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"13",9,"dplyr_row_slice",0,2,0,"filter.data.frame(starwars, species == ""Droid"", .preserve = True)","Called from  at <text>#257
-",3,0,"...","vararg","vararg",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"14",10,"filter",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#257
-",1,0,".data","list","tbl_df; tbl; data.frame","0x4a17fd8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"15",10,"filter",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#257
-",2,0,"...","vararg","vararg",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
-"16",10,"filter",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#257
-",3,0,".preserve","symbol","name","Not evaluated, expression is:  True","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6f91e80>) "
+"","call_exit_id","fun_name","is_call_user","call_stack_depth","is_user_call_with_pipe_operator","caller","line_number","param_index","is_param_missing","name_of_param","is_evaled","expr","is_vararg","type_of_argument","class_of_argument","address_of_argument","package_details"
+"1",1,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#334
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"2",1,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#334
+",2,0,"",0,"species == ""Droid""",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"3",1,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#334
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"4",2,"filter",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#338
+",1,0,".data",1,"starwars",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"5",2,"filter",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#338
+",2,0,"",0,"species == ""Droid""",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"6",2,"filter",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#338
+",3,0,".preserve",0,"True",0,"symbol","name","Not evaluated, expression is:  True","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"7",3,"filter",1,1,0,"thunc()","Called from thunc() at <text>#342
+",1,0,".data",1,"starwars",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"8",3,"filter",1,1,0,"thunc()","Called from thunc() at <text>#342
+",2,0,"",0,"species == ""Droid""",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"9",3,"filter",1,1,0,"thunc()","Called from thunc() at <text>#342
+",3,0,".preserve",0,"True",0,"symbol","name","Not evaluated, expression is:  True","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"10",4,"filter",1,1,1,"function_list[[k]](value)","Called from recur(6, starwars) at <text>#349
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"11",4,"filter",1,1,1,"function_list[[k]](value)","Called from recur(6, starwars) at <text>#349
+",2,0,"",0,"species == ""Droid""",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"12",4,"filter",1,1,1,"function_list[[k]](value)","Called from recur(6, starwars) at <text>#349
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"13",5,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x7763a28","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"14",5,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",2,0,"",0,"species == ""Droid""",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"15",5,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"16",6,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x1a2c3b8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"17",6,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",2,0,"",0,"species == ""Droid""",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"18",6,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"19",7,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x8059f98","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"20",7,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",2,0,"",0,"species == ""Droid""",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"21",7,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"22",8,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x8d71fe8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"23",8,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",2,0,"",0,"species == ""Droid""",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"24",8,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"25",9,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x92d9468","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"26",9,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",2,0,"",0,"species == ""Droid""",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"27",9,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"28",10,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x9e293f8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"29",10,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",2,0,"",0,"species == ""Droid""",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"30",10,"filter",1,1,1,"function_list[[k]](value)","Called from return(recur(i - 1, tmp)) at <text>#349
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"31",11,"filter",1,1,1,"function_list[[i]](value)","Called from  at <text>#362
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"32",11,"filter",1,1,1,"function_list[[i]](value)","Called from  at <text>#362
+",2,0,"",0,"species == ""Droid""",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"33",11,"filter",1,1,1,"function_list[[i]](value)","Called from  at <text>#362
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"34",12,"ggplot",1,1,1,"function_list[[k]](value)","Called from  at <text>#362
+",1,0,"data",1,".",0,"list","tbl_df; tbl; data.frame","0x52b0118","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"35",12,"ggplot",1,1,1,"function_list[[k]](value)","Called from  at <text>#362
+",2,0,"mapping",1,"aes(x = height, y = birth_year)",0,"list","uneval","0x773b2f8","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"36",12,"ggplot",1,1,1,"function_list[[k]](value)","Called from  at <text>#362
+",4,0,"environment",1,"parent.frame()",0,"environment","environment","0x89bf1e8","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"37",13,"geom_point",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#362
+",1,0,"mapping",1,"NULL",0,"NULL","NULL","0xddb6e0","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"38",13,"geom_point",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#362
+",2,0,"data",1,"NULL",0,"NULL","NULL","0xddb6e0","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"39",13,"geom_point",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#362
+",3,0,"stat",1,"[1] ""identity""",0,"character","character","0x1a20018","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"40",13,"geom_point",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#362
+",4,0,"position",1,"[1] ""identity""",0,"character","character","0x1a20050","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"41",13,"geom_point",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#362
+",6,0,"na.rm",1,"[1] FALSE",0,"logical","logical","0x1a06e98","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"42",13,"geom_point",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#362
+",7,0,"show.legend",1,"[1] NA",0,"logical","logical","0x1a06ed0","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"43",13,"geom_point",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#362
+",8,0,"inherit.aes",1,"[1] TRUE",0,"logical","logical","0x1a06f08","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"44",14,"+.gg",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#362
+",1,0,"e1",1,"starwars %>% filter(species == ""Droid"") %>% ggplot(aes(x = height, ",0,"list","gg; ggplot","0x8c0d608","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"45",14,"+.gg",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#362
+",1,0,"e1",1,"    y = birth_year))",0,"list","gg; ggplot","0x8c0d608","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"46",14,"+.gg",1,1,0,"doTryCatch(return(expr), name, parentenv, handler)","Called from  at <text>#362
+",2,0,"e2",1,"geom_point()",0,"environment","LayerInstance; Layer; ggproto; gg","0x8377c58","Package(name='ggplot2', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x5cd2160>) "
+"47",15,"select",1,1,1,"function_list[[k]](value)","Called from  at <text>#366
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"48",15,"select",1,1,1,"function_list[[k]](value)","Called from  at <text>#366
+",2,0,"",0,"ends_with(""color"")",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"49",15,"select",1,1,1,"function_list[[k]](value)","Called from  at <text>#366
+",2,0,"",0,"name",1,"symbol","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"50",16,"mutate",1,1,1,"function_list[[i]](value)","Called from  at <text>#369
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"51",16,"mutate",1,1,1,"function_list[[i]](value)","Called from  at <text>#369
+",2,0,"bmi",0,"mass/((height/100)^2)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"52",16,"mutate",1,1,1,"function_list[[i]](value)","Called from  at <text>#369
+",2,0,"",0,"name",1,"symbol","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"53",17,"select",1,1,1,"function_list[[k]](value)","Called from  at <text>#369
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x7997cc8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"54",17,"select",1,1,1,"function_list[[k]](value)","Called from  at <text>#369
+",2,0,"",0,"bmi",1,"symbol","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"55",17,"select",1,1,1,"function_list[[k]](value)","Called from  at <text>#369
+",2,0,"",0,"name:mass",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"56",18,"arrange",1,1,1,"function_list[[k]](value)","Called from  at <text>#373
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"57",18,"arrange",1,1,1,"function_list[[k]](value)","Called from  at <text>#373
+",2,0,"",0,"desc(mass)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"58",18,"arrange",1,1,1,"function_list[[k]](value)","Called from  at <text>#373
+",3,0,".by_group",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"59",19,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#376
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"60",19,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#376
+",2,0,"",0,"species",1,"symbol","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"61",19,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#376
+",3,0,".add",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"62",19,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#376
+",4,0,".drop",0,"group_by_drop_default(.data)",0,"language","call","Not evaluated, expression is:  group_by_drop_default(.data)","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"63",20,"summarise",1,1,1,"function_list[[i]](value)","Called from  at <text>#376
+",1,0,".data",1,".",0,"list","grouped_df; tbl_df; tbl; data.frame","0xa468468","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"64",20,"summarise",1,1,1,"function_list[[i]](value)","Called from  at <text>#376
+",2,0,"mass",0,"mean(mass, na.rm = TRUE)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"65",20,"summarise",1,1,1,"function_list[[i]](value)","Called from  at <text>#376
+",2,0,"n",0,"n()",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"66",20,"summarise",1,1,1,"function_list[[i]](value)","Called from  at <text>#376
+",3,0,".groups",0,"NULL",0,"NULL","NULL","Not evaluated, expression is:  NULL","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"67",21,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#376
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x8048638","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"68",21,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#376
+",2,0,"",0,"n > 1",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"69",21,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#376
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"70",22,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#384
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"71",22,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#384
+",2,0,"",0,"across(where(is.character), ~length(unique(.x)))",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"72",22,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#384
+",3,0,".groups",0,"NULL",0,"NULL","NULL","Not evaluated, expression is:  NULL","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"73",23,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#387
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"74",23,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#387
+",2,0,"",0,"species",1,"symbol","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"75",23,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#387
+",3,0,".add",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"76",23,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#387
+",4,0,".drop",0,"group_by_drop_default(.data)",0,"language","call","Not evaluated, expression is:  group_by_drop_default(.data)","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"77",24,"filter",1,1,1,"function_list[[i]](value)","Called from  at <text>#387
+",1,0,".data",1,".",0,"list","grouped_df; tbl_df; tbl; data.frame","0x4b789f8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"78",24,"filter",1,1,1,"function_list[[i]](value)","Called from  at <text>#387
+",2,0,"",0,"n() > 1",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"79",24,"filter",1,1,1,"function_list[[i]](value)","Called from  at <text>#387
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"80",25,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#387
+",1,0,".data",1,".",0,"list","grouped_df; tbl_df; tbl; data.frame","0x897e498","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"81",25,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#387
+",2,0,"",0,"across(c(sex, gender, homeworld), ~length(unique(.x)))",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"82",25,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#387
+",3,0,".groups",0,"NULL",0,"NULL","NULL","Not evaluated, expression is:  NULL","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"83",26,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#392
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"84",26,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#392
+",2,0,"",0,"homeworld",1,"symbol","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"85",26,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#392
+",3,0,".add",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"86",26,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#392
+",4,0,".drop",0,"group_by_drop_default(.data)",0,"language","call","Not evaluated, expression is:  group_by_drop_default(.data)","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"87",27,"filter",1,1,1,"function_list[[i]](value)","Called from  at <text>#392
+",1,0,".data",1,".",0,"list","grouped_df; tbl_df; tbl; data.frame","0xace08b8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"88",27,"filter",1,1,1,"function_list[[i]](value)","Called from  at <text>#392
+",2,0,"",0,"n() > 1",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"89",27,"filter",1,1,1,"function_list[[i]](value)","Called from  at <text>#392
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"90",28,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#392
+",1,0,".data",1,".",0,"list","grouped_df; tbl_df; tbl; data.frame","0x8dff868","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"91",28,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#392
+",2,0,"",0,"across(where(is.numeric), ~mean(.x, na.rm = TRUE))",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"92",28,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#392
+",3,0,".groups",0,"NULL",0,"NULL","NULL","Not evaluated, expression is:  NULL","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"93",29,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#399
+",1,0,".data",1,".",0,"list","data.frame","0x4ba2238","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"94",29,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#399
+",2,0,"",0,"g",1,"symbol","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"95",29,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#399
+",3,0,".add",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"96",29,"group_by",1,1,1,"function_list[[i]](value)","Called from  at <text>#399
+",4,0,".drop",0,"group_by_drop_default(.data)",0,"language","call","Not evaluated, expression is:  group_by_drop_default(.data)","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"97",30,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#399
+",1,0,".data",1,".",0,"list","grouped_df; tbl_df; tbl; data.frame","0x84946e8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"98",30,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#399
+",2,0,"",0,"across(where(is.numeric), sum)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"99",30,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#399
+",3,0,".groups",0,"NULL",0,"NULL","NULL","Not evaluated, expression is:  NULL","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"100",31,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#409
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"101",31,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#409
+",2,0,"",0,"across(where(is.numeric), min_max)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"102",31,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#409
+",3,0,".groups",0,"NULL",0,"NULL","NULL","Not evaluated, expression is:  NULL","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"103",32,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#412
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"104",32,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#412
+",2,0,"",0,"across(where(is.numeric), min_max, .names = ""{fn}.{col}"")",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"105",32,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#412
+",3,0,".groups",0,"NULL",0,"NULL","NULL","Not evaluated, expression is:  NULL","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"106",33,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#415
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"107",33,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#415
+",2,0,"",0,"across(where(is.numeric), ~max(.x, na.rm = TRUE), .names = ""max_{col}"")",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"108",33,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#415
+",2,0,"",0,"across(where(is.numeric), ~min(.x, na.rm = TRUE), .names = ""min_{col}"")",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"109",33,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#415
+",3,0,".groups",0,"NULL",0,"NULL","NULL","Not evaluated, expression is:  NULL","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"110",34,"mutate",1,1,1,"function_list[[k]](value)","Called from  at <text>#422
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x9c9ef98","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"111",34,"mutate",1,1,1,"function_list[[k]](value)","Called from  at <text>#422
+",2,0,"",0,"across(all_of(names(mult)), ~.x * mult[[cur_column()]])",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"112",35,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#425
+",1,0,".data",1,".",0,"list","data.frame","0x8cbc088","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"113",35,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#425
+",2,0,"",0,"across(where(is.numeric), sd)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"114",35,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#425
+",2,0,"n",0,"n()",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"115",35,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#425
+",3,0,".groups",0,"NULL",0,"NULL","NULL","Not evaluated, expression is:  NULL","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"116",36,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#428
+",1,0,".data",1,".",0,"list","data.frame","0x8cbc088","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"117",36,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#428
+",2,0,"n",0,"n()",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"118",36,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#428
+",2,0,"",0,"across(where(is.numeric), sd)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"119",36,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#428
+",3,0,".groups",0,"NULL",0,"NULL","NULL","Not evaluated, expression is:  NULL","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"120",37,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#432
+",1,0,".data",1,".",0,"list","data.frame","0x8cbc088","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"121",37,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#432
+",2,0,"",0,"across(where(is.numeric) & !n, sd)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"122",37,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#432
+",2,0,"n",0,"n()",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"123",37,"summarise",1,1,1,"function_list[[k]](value)","Called from  at <text>#432
+",3,0,".groups",0,"NULL",0,"NULL","NULL","Not evaluated, expression is:  NULL","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"124",38,"mutate",1,1,1,"function_list[[k]](value)","Called from  at <text>#442
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x8619348","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"125",38,"mutate",1,1,1,"function_list[[k]](value)","Called from  at <text>#442
+",2,0,"",0,"across(where(is.numeric), rescale01)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"126",39,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#444
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"127",39,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#444
+",2,0,"",0,"across(everything(), ~!is.na(.x))",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"128",39,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#444
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"129",40,"distinct",1,1,1,"function_list[[k]](value)","Called from  at <text>#447
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"130",40,"distinct",1,1,1,"function_list[[k]](value)","Called from  at <text>#447
+",2,0,"",0,"across(contains(""color""))",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"131",40,"distinct",1,1,1,"function_list[[k]](value)","Called from  at <text>#447
+",3,0,".keep_all",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"132",41,"count",1,1,1,"function_list[[k]](value)","Called from  at <text>#449
+",1,0,"x",1,".",0,"list","tbl_df; tbl; data.frame","0x98fad48","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"133",41,"count",1,1,1,"function_list[[k]](value)","Called from  at <text>#449
+",2,0,"",0,"across(contains(""color""))",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"134",41,"count",1,1,1,"function_list[[k]](value)","Called from  at <text>#449
+",3,0,"wt",0,"NULL",0,"NULL","NULL","Not evaluated, expression is:  NULL","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"135",41,"count",1,1,1,"function_list[[k]](value)","Called from  at <text>#449
+",4,0,"sort",1,"[1] TRUE",0,"logical","logical","0x49ca588","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"136",41,"count",1,1,1,"function_list[[k]](value)","Called from  at <text>#449
+",5,0,"name",1,"NULL",0,"NULL","NULL","0xddb6e0","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"137",41,"count",1,1,1,"function_list[[k]](value)","Called from  at <text>#449
+",6,0,".drop",1,"group_by_drop_default(x)",0,"logical","logical","0x5b31878","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"138",42,"mutate_if",1,1,1,"function_list[[k]](value)","Called from  at <text>#451
+",1,0,".tbl",1,".",0,"list","tbl_df; tbl; data.frame","0x8619348","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"139",42,"mutate_if",1,1,1,"function_list[[k]](value)","Called from  at <text>#451
+",2,0,".predicate",1,"is.numeric",0,"builtin","function","0xdf4018","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"140",42,"mutate_if",1,1,1,"function_list[[k]](value)","Called from  at <text>#451
+",3,0,".funs",1,"mean",0,"closure","function","0x64d26e8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"141",42,"mutate_if",1,1,1,"function_list[[k]](value)","Called from  at <text>#451
+",4,0,"na.rm",0,"[1] TRUE",1,"logical","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"142",43,"mutate",1,1,1,"function_list[[k]](value)","Called from  at <text>#453
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x8619348","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"143",43,"mutate",1,1,1,"function_list[[k]](value)","Called from  at <text>#453
+",2,0,"",0,"across(where(is.numeric), mean, na.rm = TRUE)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"144",44,"mutate_at",1,1,1,"function_list[[k]](value)","Called from  at <text>#454
+",1,0,".tbl",1,".",0,"list","tbl_df; tbl; data.frame","0x8619348","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"145",44,"mutate_at",1,1,1,"function_list[[k]](value)","Called from  at <text>#454
+",2,0,".vars",1,"vars(c(x, starts_with(""y"")))",0,"list","quosures; list","0x9362c08","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"146",44,"mutate_at",1,1,1,"function_list[[k]](value)","Called from  at <text>#454
+",3,0,".funs",1,"mean",0,"closure","function","0x64d26e8","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"147",44,"mutate_at",1,1,1,"function_list[[k]](value)","Called from  at <text>#454
+",5,0,".cols",1,"NULL",0,"NULL","NULL","0xddb6e0","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"148",45,"mutate",1,1,1,"function_list[[k]](value)","Called from  at <text>#457
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x8619348","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"149",45,"mutate",1,1,1,"function_list[[k]](value)","Called from  at <text>#457
+",2,0,"",0,"across(c(x, starts_with(""y"")), mean, na.rm = TRUE)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"150",46,"mutate",1,1,1,"function_list[[k]](value)","Called from  at <text>#462
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0x8619348","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"151",46,"mutate",1,1,1,"function_list[[k]](value)","Called from  at <text>#462
+",2,0,"",0,"across(everything(), mean)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"152",47,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#465
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0xa648a78","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"153",47,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#465
+",2,0,"",0,"across(where(is.numeric), ~.x > 0)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"154",47,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#465
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"155",48,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#469
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0xa648a78","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"156",48,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#469
+",2,0,"",0,"rowAny(across(where(is.numeric), ~.x > 0))",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"157",48,"filter",1,1,1,"function_list[[k]](value)","Called from  at <text>#469
+",3,0,".preserve",0,"[1] FALSE",0,"logical","logical","Not evaluated, expression is:  [1] FALSE","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"158",49,"mutate_all",1,1,1,"function_list[[k]](value)","Called from with_tracing_enabled({                                                            df %>% mutate_all(~.x / y)                                                          }) at <text>#474
+",1,0,".tbl",1,".",0,"list","tbl_df; tbl; data.frame","0xb028728","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"159",49,"mutate_all",1,1,1,"function_list[[k]](value)","Called from with_tracing_enabled({                                                            df %>% mutate_all(~.x / y)                                                          }) at <text>#474
+",2,0,".funs",1,"~.x/y",0,"language","formula","0x6d52dd0","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"160",50,"mutate",1,1,1,"function_list[[k]](value)","Called from  at <text>#478
+",1,0,".data",1,".",0,"list","tbl_df; tbl; data.frame","0xb028728","Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
+"161",50,"mutate",1,1,1,"function_list[[k]](value)","Called from  at <text>#478
+",2,0,"",0,"across(everything(), ~.x/y)",1,"language","instrumentr_argument; instrumentr_object",NA,"Package(name='dplyr', directory='/home/nsaripalli/R/x86_64-redhat-linux-gnu-library/3.6', environment=<environment: 0x6282b10>) "
